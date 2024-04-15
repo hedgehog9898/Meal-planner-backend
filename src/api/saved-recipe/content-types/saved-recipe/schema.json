@@ -1,0 +1,37 @@
+{
+  "kind": "collectionType",
+  "collectionName": "saved_recipes",
+  "info": {
+    "singularName": "saved-recipe",
+    "pluralName": "saved-recipes",
+    "displayName": "SavedRecipes",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "recipe": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::recipe.recipe"
+    },
+    "user": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "plugin::users-permissions.user"
+    },
+    "time": {
+      "type": "enumeration",
+      "enum": [
+        "Завтрак",
+        "Обед",
+        "Ужин"
+      ]
+    },
+    "date": {
+      "type": "datetime"
+    }
+  }
+}
