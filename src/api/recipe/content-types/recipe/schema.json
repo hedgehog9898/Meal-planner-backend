@@ -21,9 +21,8 @@
       "type": "string"
     },
     "ingredients": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::ingredient.ingredient"
+      "type": "json",
+      "required": true
     }
   }
 }
