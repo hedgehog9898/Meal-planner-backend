@@ -32,6 +32,10 @@
     },
     "date": {
       "type": "datetime"
+    },
+    "already_cooked": {
+      "type": "boolean",
+      "default": false
     }
   }
 }
